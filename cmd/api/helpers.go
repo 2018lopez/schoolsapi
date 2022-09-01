@@ -3,6 +3,7 @@
 package main
 
 import (
+	"encoding/json"
 	"errors"
 	"net/http"
 	"strconv"
@@ -22,5 +23,33 @@ func (app *application) readIDParam(r *http.Request) (int64, error) {
 		return 0, errors.New("invalid id parameter")
 	}
 	return id, nil
+
+}
+
+func (app *application) writeJSON(w http.ResponseWriter, status int, data interface{}, headers http.Header) error {
+
+	//convert our map into a JSON object
+	js, err := json.Marshal(data)
+
+	if err != nil {
+
+		return err
+	}
+
+	//add a newline to make viewing on the terminal easier
+	js = append(js, '\n')
+
+	//add the headers
+	for key, value := range headers {
+		w.Header()[key] = value
+	}
+
+	//specify that we will serve our response using JSON
+	w.Header().Set("Content-Type", "application/json")
+	w.WriteHeader(status)
+	//write the [] byte slice containing the JSON response body
+	w.Write(js)
+
+	return nil
 
 }
