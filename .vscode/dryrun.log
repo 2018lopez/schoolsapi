@@ -1,3 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
-/bin/sh: 1: make: not found
+make: Entering directory '/home/imer/dev/school/4192/schoolsapi'
+make: Leaving directory '/home/imer/dev/school/4192/schoolsapi'
+ 
+make: *** No targets.  Stop.
 
