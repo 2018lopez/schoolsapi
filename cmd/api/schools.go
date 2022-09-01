@@ -5,9 +5,6 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"strconv"
-
-	"github.com/julienschmidt/httprouter"
 )
 
 //create school handler for "POST" /v1/schools/ endpoint
@@ -20,12 +17,7 @@ func (app *application) createSchoolHandler(w http.ResponseWriter, r *http.Reque
 // show school  GET /v1/schools/:id
 func (app *application) showSchoolHandler(w http.ResponseWriter, r *http.Request) {
 
-	//use the ParamsFromContext function to get the request contect as a slice
-	params := httprouter.ParamsFromContext(r.Context())
-
-	//get the value of the ":id" parameter
-
-	id, err := strconv.ParseInt(params.ByName("id"), 10, 64)
+	id, err := app.readIDParam(r)
 
 	if err != nil {
 		http.NotFound(w, r)
