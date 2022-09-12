@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Sep  1 15:36:35 2022
+# Make data base, printed on Mon Sep 12 10:46:07 2022
 
 # Variables
 
@@ -37,7 +35,7 @@ GOPATH = /home/imer/go
 # environment
 SNAP_INSTANCE_NAME = code
 # environment
-GDK_PIXBUF_MODULEDIR = /snap/code/105/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+GDK_PIXBUF_MODULEDIR = /snap/code/106/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -57,17 +55,17 @@ OLDPWD = /home/imer/dev/school/4192
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/imer/.config/Code/CachedData/e4503b30fc78200f846c62cf8091b76ff5547662
+VSCODE_CODE_CACHE_PATH = /home/imer/.config/Code/CachedData/784b0177c56c607789f9638da7b6bf3230d47a8c
 # environment
 LANG = C
 # environment
-XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.L1G7R1
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.QKJBS1
 # default
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
 # environment
-GNOME_TERMINAL_SERVICE = :1.97
+GNOME_TERMINAL_SERVICE = :1.129
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -101,7 +99,7 @@ SNAP_REEXEC =
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 2943
+VSCODE_PID = 23621
 # environment
 HISTIGNORE = &:[ ]*:exit:ls:bg:fg:history:clear
 # environment
@@ -109,7 +107,7 @@ XDG_SESSION_TYPE = wayland
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/geeks:@/tmp/.ICE-unix/1754,unix/geeks:/tmp/.ICE-unix/1754
+SESSION_MANAGER = local/geeks:@/tmp/.ICE-unix/2015,unix/geeks:/tmp/.ICE-unix/2015
 # automatic
 *F = $(notdir $*)
 # environment
@@ -137,7 +135,7 @@ XMODIFIERS = @im=ibus
 # environment
 SHLVL = 1
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/42d5f5c4_fd47_435e_b556_fc0fbb54fa44
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/d71adaa0_eec9_40d7_9e77_8c08d4cf84bc
 # environment
 MAKELEVEL := 0
 # default
@@ -153,9 +151,9 @@ MAKEFILES :=
 # environment
 SNAP_USER_COMMON = /home/imer/snap/code/common
 # environment
-SNAP = /snap/code/105
+SNAP = /snap/code/106
 # environment
-SNAP_REVISION = 105
+SNAP_REVISION = 106
 # environment
 SNAP_REAL_HOME = /home/imer
 # environment
@@ -187,7 +185,7 @@ SNAP_ARCH = amd64
 # makefile
 .DEFAULT_GOAL := 
 # environment
-SYSTEMD_EXEC_PID = 1815
+SYSTEMD_EXEC_PID = 2057
 # environment
 DISPLAY = :0
 # environment
@@ -197,11 +195,11 @@ GTK_MODULES = gail:atk-bridge
 # default
 MAKE_VERSION := 4.3
 # environment
-DISABLE_WAYLAND = 1
-# environment
-SNAP_DATA = /var/snap/code/105
+SNAP_DATA = /var/snap/code/106
 # environment
 SNAP_CONTEXT = zb0ScWR4_Y8WmYBXa2hXCzhi-NvqEm5ueJg-sNeLrhwbrwojnoUy
+# environment
+KRI_DB_DSN = postgres://kriol:kriol12$@localhost/kriol?sslmode=disable
 # environment
 PAGER = less
 # environment
@@ -225,13 +223,13 @@ QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-7bf93614-1.70.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-7bf93614-1.71.0-main.sock
 # environment
 TERM = xterm-256color
 # environment
 SNAP_NAME = code
 # environment
-GSETTINGS_SCHEMA_DIR = /snap/code/105/usr/share/glib-2.0/schemas
+GSETTINGS_SCHEMA_DIR = /snap/code/106/usr/share/glib-2.0/schemas
 # environment
 IM_CONFIG_PHASE = 1
 # environment
@@ -241,7 +239,7 @@ GOPROXY = https://proxy.golang.org,direct
 # automatic
 <F = $(notdir $<)
 # environment
-SNAP_VERSION = e4503b30
+SNAP_VERSION = 784b0177
 # default
 SUFFIXES := 
 # environment
@@ -255,7 +253,7 @@ SNAP_COMMON = /var/snap/code/common
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # environment
-SNAP_USER_DATA = /home/imer/snap/code/105
+SNAP_USER_DATA = /home/imer/snap/code/106
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
@@ -271,20 +269,22 @@ SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd
 
 # Directories
 
-# . (device 2051, inode 2235433): 9 files, no impossibilities.
+# . (device 2051, inode 2235433): 11 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
 # No implicit rules.
+
+ 
+make: *** No rule to make target 'all'.  Stop.
 
 # Files
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-08-23 20:39:09.799619718
 #  File has been updated.
 #  Successfully updated.
@@ -310,12 +310,12 @@ all:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 115 B / avg = 8 B
-# current buf: size = 8162 B / used = 115 B / count = 14 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 131 B / avg = 8 B
+# current buf: size = 8162 B / used = 131 B / count = 16 / avg = 8 B
 
-# strcache performance: lookups = 18 / hit rate = 22%
+# strcache performance: lookups = 20 / hit rate = 20%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=0/18=0%
-# Finished Make data base on Thu Sep  1 15:36:35 2022
+# Load=16/8192=0%, Rehash=0, Collisions=0/20=0%
+# Finished Make data base on Mon Sep 12 10:46:07 2022
 
  
