@@ -23,7 +23,7 @@ func (app *application) showSchoolHandler(w http.ResponseWriter, r *http.Request
 	id, err := app.readIDParam(r)
 
 	if err != nil {
-		http.NotFound(w, r)
+		app.notFoundResponse(w, r)
 		return
 	}
 
@@ -41,10 +41,9 @@ func (app *application) showSchoolHandler(w http.ResponseWriter, r *http.Request
 		Version:  1,
 	}
 
-	err = app.writeJSON(w, http.StatusOK, school, nil)
+	err = app.writeJSON(w, http.StatusOK, envelope{"school": school}, nil)
 
 	if err != nil {
-		app.logger.Println(err)
-		http.Error(w, "The server encountered a problem and could processs your request", http.StatusInternalServerError)
+		app.serverErrorResponse(w, r, err)
 	}
 }
